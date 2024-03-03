@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined:opsz,ight,FILL, GRAD 20..48,100..780,0..1,-50..200">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Gestor de contraseñas</title>
+</head>
+<body style="background-color: rgb(172, 197, 230)">
+        <div id="main" class="container">
+            <div id="marco" class="container my-5 text-center">
+                <h1>Gestor de contraseñas</h1>
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Plataforma</th>
+                            <th scope="col">Usuario</th>
+                            <th scope="col">Contraseña</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data"></tbody>
+                </table>
+                <button type="button" class="btn btn-info" onclick="location.href='add.html'">
+                    <img src="imagenes/add.png" height="30" width="30" alt="Agregar"/>
+                </button>
+            </div>
+            <script>
+                consulta_general();
+            </script>
+        </div>
+</body>
+</html>
